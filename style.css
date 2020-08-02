@@ -1,0 +1,296 @@
+/* we use the asterisk to clean all margins and paddings that the browsers have pre set already*/
+/* background colors - pink:#feccff, green - #01b3b3, grey - #131313;colors - pink: #fa43fc, green:#099, grey:#717171;*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/* the body will rule all the basic things inside the css */
+body{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	background-position:center;
+/* here is were we will put the family font, roboto will be the first one, however if the user browser has any issues to load this font, it will automatically load any sans serif font family that is already installed on the user device*/
+	font-family:'Roboto', sans-serif;
+/* here we decide to put the 100% font size as 18 px */
+	font-size:18px;
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+/* the container will define the maximum width and the margins of our website. The biggest screen width for now is 1140px. This will of course change with the years*/
+.container{
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* here we are cleaning all the text decorations on the links that are already pre seted by the browser and adding this color*/
+a{
+	text-decoration:none;
+	color:#e67e22;
+}
+/* here we will define the style of the nav bar */
+.nav-bar{
+	background-color:#fff;
+/* here we are cleaning all the list style , for this specific list */
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+/*here we are defining the syle of the list items inside the nav bar, we are just organizing them in a line*/
+.nav-bar li{
+	display:inline;
+}
+
+.nav-bar a{
+	display: inline-block;
+	text-decoration:none;
+	padding: 10px 62px;
+	color:#141414;
+}	
+/* hover means when the cursor is over the tag, here we are changing the background color of the navigation bar*/
+.nav-bar a:hover{
+	background-color: #e67e22;
+}
+.actual-page{
+	background-color: #e67e22;
+}
+/* on this page we need two divisions so the first one must have a float left in order to be glued at the left margin*/
+.division-one{
+	background-color: #fff;
+	margin-top: 10px;
+	width: 29%;
+	float: left;
+}
+
+/* its better to define the width of an image using CSS and not HTML, but also its better to specify it using %*/
+.division-one img{
+	width: 100%;
+}
+/* we have some issues when we talk about browsers and css effects. In order to solve the problem we need to define the effect for all the 5 browesers: -webkit- (chrome and safari) -moz- (mozzila firefox) -ms- (microsoft browsers) -o- (opera) */
+.division-one img:hover{
+	transform: scale(1.05);
+	transition: transform 0.5s;
+	opacity: 0.8;
+	/*webkit---google crome and safari*/
+	-webkit-transform:scale(1.05);
+	-webkit-transition: transform 0.5s;
+	-webkit-transition: opacity: 0.8s;
+	/*mozilla firefox */
+	-moz-transform:scale(1.05);
+	-moz-transition: transform 0.5s;
+	-moz-transition: opacity: 0.8s;
+	/*microsoft browser */
+	-ms-transform:scale(1.05);
+	-ms-transition: transform 0.5s;
+	-ms-transition: opacity: 0.8s;
+	/*opera */
+	-o-transform:scale(1.05);
+	-o-transition: transform 0.5s;
+	-o-transition: opacity: 0.8s;
+}
+/* line-height is used to define space between the lines without the tag br on the HTML */
+.description{
+	/* text-align: center, this is if i want to have the div one text in the center instead of having it from the left side */
+	margin-top:2%;
+	margin-left:1%;
+	margin-bottom:3%;
+	line-height:184%;
+}
+hr{
+	color:#e67e22;
+}
+.division-one ul li {
+	list-style: none;
+	display: inline;
+	text-align: center;
+	font-size: 300%;
+	margin-left: 14.2%;
+}
+
+.division-one ul li a:hover{
+	opacity: 0.7;
+	-webkit-opacity:0.7;
+	-moz-opacity:0.7;
+	-ms-opacity:0.7;
+	-o-opacity:0.7;
+}
+.extra-icon ul li{
+	list-style: none;
+	display: inline;
+	text-align: center;
+	font-size: 300%;
+	margin-left: 10.5%;
+}
+/*padding is the difference between the information*/
+
+h1{
+	text-align: center;
+	margin-top: 8%;
+}
+/* the second division must be float right in order to be glued at the right */
+.division-two{
+	background-color: #fff;
+	margin-top:10px;
+	width:70%;
+	float:right;
+	position:relative;
+}
+.division-two p{
+	margin-bottom:3%;
+	line-height:26px;
+	margin-left:1.5%;
+}
+h2{
+	color:#e67e22;
+	margin-top:3.5%;
+	margin-left:1.5%;
+}
+h3{
+	margin-top:2.5%;
+	color:#e67e22;
+	margin-left:1.5%;
+}
+.space{
+	margin-top:-5.5%;
+}
+footer{
+	text-align:center;
+	width:100%;
+	float:left;
+}
+footer p {
+	color: #fff;
+	font-size: 12px;
+	margin-top: 1%;
+	padding-bottom: 1%;
+}
+/*.hr-title{
+	margin-top:1%;
+}*/
+em{
+	color:#e67e22;
+}
+.divison-three{
+	float: left;
+	width: 45%;
+	margin-left: 0.5%;
+	height: 100px;
+	margin-bottom:5%;
+}
+/* here is the 'containter' of our progress bar */
+.wrapper{
+	width: 95%;
+	margin-top: -3%;
+	margin-left: 1.5%;
+}
+.progress-bar{
+	width: 100%;
+	background-color:#e0e0e0;
+	padding: 3px;
+	height: 16px;
+	/* border radius is to make the border rounded */
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	height: 16px;
+	/* we use box shaddow: insert to create an inner shaddow and box-shaddow: offset to create an out shaddow*/
+	box-shadow: inset 0 1px 3px rgba (0,0,0, .2);
+	-webkit-box-shadow: inset 0 1px 3px rgba (0,0,0, .2);
+	-moz-box-shadow: inset 0 1px 3px rgba (0,0,0, .2);
+	-ms-box-shadow: inset 0 1px 3px rgba (0,0,0, .2);
+	-o-box-shadow: inset 0 1px 3px rgba (0,0,0, .2);
+}
+.progress-bar-fill{
+	display: block;
+	height: 22px;
+	/* linear gradient could be to the left, right, bottom or top and we must have to define the starting and ending colors */
+	background-image: linear-gradient(to right, #000, #e67e22);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	transition: width 500ms ease-in-out;
+	height:10px;
+}
+.division-four{
+	float: right;
+	width: 45%;
+	height: 100px;
+}
+.hr-skills{
+	margin-top: 18%;
+}
+.division-five{
+	float:left;
+	width:15%;
+	margin-left:0.5%;
+	margin-top:3%;
+	text-align:right;
+	line-height:32px;
+}
+.division-six{
+	float:right;
+	width:84%;
+}
+input{
+	width:92%;
+	display:inline-block;
+	text-decoration:none;
+	border-radius:200px;
+	-webkit-border-radius:200px;
+	-moz-border-radius:200px;
+	-ms-border-radius:200px;
+	-o-border-radius:200px;
+	border-color: #e67e22;
+	height:30px;
+	margin-top:4%;
+}
+textarea{
+	margin-top:4%;
+	width:92%;
+	padding:7px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	height:300px;
+	border-color:#e67e22;
+}
+/* we can also edit only the attributes using CSS so here we will layout the input type submit */
+input[type=submit]{
+		width:30%;
+		display:inline-block;
+		text-decoration:none;
+		border-radius:200px;
+		-webkit-border-radius:200px;
+		-moz-border-radius:200px;
+		-ms-border-radius:200px;
+		-o-border-radius:200px;
+		background-color:#e67e22;
+		color:#FFF;
+		height:30px;
+		margin-top:2%;
+		float:right;
+		margin-right:8%;
+}
+input[type=submit]:hover{
+		opacity:80%;
+		-webkit-opacity:80%;
+		-moz-opacity:80%;
+		-ms-opacity:80%;
+		-o-opacity:80%;
+	}
+	.form-messages{
+		font-size:120%;
+	}
+	.success{
+		color:#090;
+	}
